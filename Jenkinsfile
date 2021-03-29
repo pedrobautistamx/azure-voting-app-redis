@@ -4,7 +4,7 @@ pipeline {
    stages {
       stage('Verify Branch') {
          steps {
-            Write-Output "Hello W"
+            pwsh(script: 'Write-Output "Hello W"')
          }
       }
    }
